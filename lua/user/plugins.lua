@@ -91,5 +91,5 @@ require("lazy").setup({
 	"catppuccin/nvim",
 	"EdenEast/nightfox.nvim",
 	"loctvl842/monokai-pro.nvim",
-	"shaunsingh/nord.nvim",
+	"nordtheme/vim",
 })
