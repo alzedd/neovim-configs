@@ -6,7 +6,7 @@
 -- 	},
 -- })
 
-equire("gruvbox").setup({
+require("gruvbox").setup({
 	terminal_colors = true, -- add neovim terminal colors
 	undercurl = true,
 	underline = true,
@@ -30,7 +30,6 @@ equire("gruvbox").setup({
 	dim_inactive = false,
 	transparent_mode = false,
 })
-vim.cmd("colorscheme gruvbox")
 
 local colorscheme = "gruvbox"
 
