@@ -13,7 +13,6 @@ require("user.plugins.comment")
 require("user.plugins.whichkey")
 require("user.plugins.gitsigns")
 require("user.plugins.toggleterm")
-require("user.plugins.treesitter")
 
 -------- shortcuts -------
 require("user.shortcuts")
@@ -21,3 +20,6 @@ require("user.shortcuts")
 -------- LSPS -------
 require("user.lsp")
 require("user.diagnostics")
+
+-------- TREESITTER -------
+require("user.plugins.treesitter")
