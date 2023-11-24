@@ -31,17 +31,17 @@
 -- 	transparent_mode = false,
 -- })
 
-require("github-theme").setup({
-	options = {
-		darken = {
-			sidebars = {
-				enable = true,
-				list = { "nvim-tree" },
-			},
-		},
-	},
-})
-local colorscheme = "github_dark_dimmed"
+-- require("github-theme").setup({
+-- 	options = {
+-- 		darken = {
+-- 			sidebars = {
+-- 				enable = true,
+-- 				list = { "nvim-tree" },
+-- 			},
+-- 		},
+-- 	},
+-- })
+local colorscheme = "ayu-dark"
 
 local status_ok, _ = pcall(vim.cmd, "colorscheme " .. colorscheme)
 if not status_ok then
