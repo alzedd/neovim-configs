@@ -3,7 +3,7 @@ local servers = {
 	"bashls",
 	"jsonls",
 	"yamlls",
-	"intelephense",
+	"phpactor",
 	"gopls",
 }
 

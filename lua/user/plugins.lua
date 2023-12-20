@@ -66,7 +66,7 @@ require("lazy").setup({
 	"neovim/nvim-lspconfig",
 	"williamboman/mason.nvim",
 	"williamboman/mason-lspconfig.nvim",
-	"jose-elias-alvarez/null-ls.nvim",
+	-- "jose-elias-alvarez/null-ls.nvim",
 	"RRethy/vim-illuminate",
 
 	-- CMP
