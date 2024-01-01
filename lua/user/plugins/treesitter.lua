@@ -4,7 +4,7 @@ function M.config()
 	local configs = require("nvim-treesitter.configs")
 
 	configs.setup({
-		ensure_installed = { "php", "markdown", "markdown_inline", "bash", "php", "javascript", "typescript" }, -- put the language you want in this array
+		ensure_installed = { "lua", "php", "markdown", "markdown_inline", "bash", "php", "javascript", "typescript" }, -- put the language you want in this array
 		sync_install = true, -- install languages synchronously (only applied to `ensure_installed`)
 
 		highlight = {
