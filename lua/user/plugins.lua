@@ -63,10 +63,11 @@ require("lazy").setup({
 	"lewis6991/gitsigns.nvim",
 
 	-- LSP
-	"neovim/nvim-lspconfig",
 	"williamboman/mason.nvim",
-	"williamboman/mason-lspconfig.nvim",
-	-- "jose-elias-alvarez/null-ls.nvim",
+    "williamboman/mason-lspconfig.nvim",
+    "neovim/nvim-lspconfig",
+	"lvimuser/lsp-inlayhints.nvim",
+	"jose-elias-alvarez/null-ls.nvim",
 	"RRethy/vim-illuminate",
 
 	-- CMP
