@@ -94,4 +94,10 @@ require("lazy").setup({
 	"loctvl842/monokai-pro.nvim",
 	"nordtheme/vim",
 	"projekt0n/github-nvim-theme",
+	{
+		"mcchrish/zenbones.nvim",
+		dependencies = {
+			"rktjmp/lush.nvim"
+		}
+	}
 })
