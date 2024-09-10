@@ -70,6 +70,13 @@ require("lazy").setup({
 	"jose-elias-alvarez/null-ls.nvim",
 	"RRethy/vim-illuminate",
 
+	-- Better syntax highlight
+	{
+		'MeanderingProgrammer/render-markdown.nvim',
+		opts = {},
+		dependencies = { 'nvim-treesitter/nvim-treesitter', 'nvim-tree/nvim-web-devicons' },
+	},
+
 	-- CMP
 	"hrsh7th/nvim-cmp",
 	"hrsh7th/cmp-buffer",
