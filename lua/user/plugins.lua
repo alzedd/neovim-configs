@@ -87,7 +87,12 @@ require("lazy").setup({
 
 	-- COLORSCHEMES
 	"Shatur/neovim-ayu",
-	"folke/tokyonight.nvim",
+	{
+		"folke/tokyonight.nvim",
+		lazy = false,
+		priority = 1000,
+		opts = {},
+	},
 	"ellisonleao/gruvbox.nvim",
 	"catppuccin/nvim",
 	"EdenEast/nightfox.nvim",
