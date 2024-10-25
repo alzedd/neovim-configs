@@ -23,3 +23,4 @@ require("user.diagnostics")
 
 -------- TREESITTER -------
 require("user.plugins.treesitter")
+
