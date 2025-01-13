@@ -59,8 +59,8 @@ require("lazy").setup({
 
 	-- LSP
 	"williamboman/mason.nvim",
-    "williamboman/mason-lspconfig.nvim",
-    "neovim/nvim-lspconfig",
+	"williamboman/mason-lspconfig.nvim",
+	"neovim/nvim-lspconfig",
 	"lvimuser/lsp-inlayhints.nvim",
 	"nvimtools/none-ls.nvim",
 	"RRethy/vim-illuminate",
@@ -94,6 +94,14 @@ require("lazy").setup({
 		lazy = false,
 		priority = 1000,
 		opts = {},
+	},
+	{
+		'AlexvZyl/nordic.nvim',
+		lazy = false,
+		priority = 1000,
+		config = function()
+			require('nordic').load()
+		end
 	},
 	"ellisonleao/gruvbox.nvim",
 	"catppuccin/nvim",

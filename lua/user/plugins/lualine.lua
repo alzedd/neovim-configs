@@ -63,7 +63,7 @@ end
 
 lualine.setup({
 	options = {
-		theme = 'tokyonight',
+		theme = 'nordic',
 		icons_enabled = true,
 		theme = "auto",
 		component_separators = { left = "", right = "" },
