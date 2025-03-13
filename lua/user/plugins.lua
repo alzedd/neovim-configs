@@ -110,6 +110,8 @@ require("lazy").setup({
 	-- Shortcut handler
 	"folke/which-key.nvim",
 
+	"rebelot/kanagawa.nvim",
+
 	-- COLORSCHEMES
 	"Shatur/neovim-ayu",
 	{

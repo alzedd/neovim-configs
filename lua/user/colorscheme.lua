@@ -1,49 +1,26 @@
--- require("ayu").setup({
--- 	mirage = false,
--- 	overrides = {
--- 		Comment = { fg = "Gray40" },
--- 		LineNr = { fg = "Gray40" },
--- 	},
--- })
+-- Default options:
+require('kanagawa').setup({
+    compile = false,             -- enable compiling the colorscheme
+    undercurl = true,            -- enable undercurls
+    commentStyle = { italic = true },
+    functionStyle = {},
+    keywordStyle = { italic = true},
+    statementStyle = { bold = true },
+    transparent = false,         -- do not set background color
+    dimInactive = false,         -- dim inactive window `:h hl-NormalNC`
+    terminalColors = true,       -- define vim.g.terminal_color_{0,17}
+    theme = "dragon",              -- Load "wave" theme when 'background' option is not set
+    background = {               -- map the value of 'background' option to a theme
+        dark = "dragon",           -- try "dragon" !
+        light = "lotus"
+    },
+})
 
--- require("gruvbox").setup({
--- 	terminal_colors = true, -- add neovim terminal colors
--- 	undercurl = true,
--- 	underline = true,
--- 	bold = true,
--- 	italic = {
--- 		strings = true,
--- 		emphasis = true,
--- 		comments = true,
--- 		operators = false,
--- 		folds = true,
--- 	},
--- 	strikethrough = true,
--- 	invert_selection = false,
--- 	invert_signs = false,
--- 	invert_tabline = false,
--- 	invert_intend_guides = false,
--- 	inverse = true, -- invert background for search, diffs, statuslines and errors
--- 	contrast = "", -- can be "hard", "soft" or empty string
--- 	palette_overrides = {},
--- 	overrides = {},
--- 	dim_inactive = false,
--- 	transparent_mode = false,
--- })
-
--- require("github-theme").setup({
--- 	options = {
--- 		darken = {
--- 			sidebars = {
--- 				enable = true,
--- 				list = { "nvim-tree" },
--- 			},
--- 		},
--- 	},
--- })
-local colorscheme = "nordic"
-
-local status_ok, _ = pcall(vim.cmd, "colorscheme " .. colorscheme)
-if not status_ok then
-	return
-end
+-- setup must be called before loading
+vim.cmd("colorscheme kanagawa") 
+-- local colorscheme = "kanagawa-dragon"
+--
+-- local status_ok, _ = pcall(vim.cmd, "colorscheme " .. colorscheme)
+-- if not status_ok then
+-- 	return
+-- end
